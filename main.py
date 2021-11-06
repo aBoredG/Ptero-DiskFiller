@@ -1,2 +1,2 @@
 import subprocess
-subprocess.call("fallocate -l 6942G diskfilled", shell=True)
+subprocess.call("bash filler.py", shell=True)
